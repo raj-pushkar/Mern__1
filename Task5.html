@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >TASK5</title>
+    <center>
+        <h1 style = "color:Blue;">Registation Form</h1> 
+    </center>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="name"required style="width: 200px; max-width: 100%;"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lastname"required style="width: 200px; max-width: 100%;"></td>
+
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="mail" name="mail"required style="width: 200px; max-width: 200%;"></td>
+
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"required style="width: 200px; max-width: auto;"></td>
+
+        </tr>
+        <tr>
+            <td>Re-Enter Password</td>
+            <td><input type="password" name="password"required style="width: 200px; max-width: 100%;"></td>
+
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+            <label class="xyz"> <input type="radio" name="gender" value="Male">Male</label>
+            <br>
+            <label class="xyz"><input type="radio" style="margin-left: 5px" name="gender" value="Female">Female</label>
+            <br></br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Age</td>
+            <td><input type="number" min="0" name="age"required style="width: 200px; max-width: 100%;"></td>
+        </tr>
+
+        <tr>
+            <td>Phone Number</td>
+            <td><input type="tel" name="number"required style="width: 200px; max-width: 100%;"></td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address" required style="width: 200px; max-width: 100%;"></td>
+
+        </tr>
+        <tr>
+            <td><label for="state">State</label></td>
+            <td>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected></option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><label for="country">Select a Country:</label></td>
+            <td>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected></option>
+                    <option value="India">India</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Russia">Russia</option>
+                <!-- Add more countries as needed -->
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><label class="language-checkboxes">Language Known</label></td>
+            <td>
+                <input type="checkbox" id="english" name="languages" value="English" class="language-checkbox">
+                <label for="english">English</label>
+                <input type="checkbox" id="spanish" name="languages" value="Spanish" class="language-checkbox">
+                <label for="spanish">Spanish</label>
+                <input type="checkbox" id="french" name="languages" value="French" class="language-checkbox">
+                <label for="french">French</label>
+                <input type="checkbox" id="german" name="languages" value="German" class="language-checkbox">
+                <label for="german">German</label>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Hereby I declare that all details given are true</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                Login to <a href="https://codemithra.com/">Ethnus</a> Website
+            </td>
+        </tr>
+        
+        </td>
+    </table>
+    <center> <input type="submit" value="Register"> </center>
+</body>
+</html>

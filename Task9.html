@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Nav Bar</title>
+    <style>
+        /* Style for the navigation bar container */
+        .navbar {
+
+            width: 0; /* Initially, the navbar is hidden */
+            margin-top: 5px;
+            position: fixed;
+            
+            left: 0;
+            background-color: #fcfcfc;
+            overflow-x: hidden;
+            transition: 0.5s; /* Transition for smooth opening/closing */
+        }
+
+        /* Style for the navigation links */
+        .navbar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s; /* Transition for link hover effect */
+        }
+
+        /* Style for the navigation links on hover */
+        .navbar a:hover {
+            background-color: #fdfdfd;
+        }
+
+        /* Style for the div that triggers the navbar */
+        .trigger {
+            width: 100px;
+            height: 40px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        /* When you hover over the trigger, open the navbar */
+        .trigger:hover + .navbar {
+            width: 250px;
+        }
+         .navbar:hover  {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The trigger div -->
+    <div class="trigger">Hover Me</div>
+    
+    <!-- The navigation bar -->
+    <div class="navbar">
+        <a href="#" style="background-color: red; margin: 3px;">Home</a>
+        <a href="#" style="background-color: blue;margin: 3px;">Java</a>
+        <a href="#" style="background-color: green;margin: 3px;">HTML</a>
+        <a href="#" style="background-color: grey;margin: 3px;">CSS</a>
+       
+    </div>
+</body>
+</html>

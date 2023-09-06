@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 02</title>
+    <style>
+        /* Style for the navigation bar container */
+        .v_navbar {
+            margin-top: 10%;
+            background-color: #14c6ee;
+            width: 200px; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto; 
+            padding: 20px;
+        }
+
+       
+        .v_navbar a {
+            display: block;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+
+       
+        .v_navbar a:hover {
+            background-color: rgb(227, 213, 20);
+        }
+        
+        
+        .h_navbar {
+            background-color: #b1b0b0;
+            overflow: hidden;
+            width: 400px;
+            margin-left: 30%;
+            margin-top: 200px;
+        }
+
+        
+        .h_navbar a {
+            float: left;
+            display: block;
+            color: rgb(12, 35, 241);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+       
+        .h_navbar a:hover {
+            background-color: #4e4e4e;
+        }
+    </style>
+    
+    </style>
+</head>
+<body>
+    <h2>
+        Vertical Navigation Bar
+    </h2>
+    <div id="box1" >
+        <div class="v_navbar">
+            <a href="#">Home</a>
+            <a href="#">Java</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+    
+    <div id="box2 ">
+        <div class="h_navbar">
+            <a href="#">Home</a>
+            <a href="#">Java</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>
